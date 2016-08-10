@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import style from "./switch-button.css";
 
 export default class SwitchButton extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class SwitchButton extends Component {
 
   render() {
     return (
-      <div className={this.props.className}>
+      <div className={this.props.className} style={style}>
       <label></label>
       <input
       onChange={this.props.onChange}
