@@ -17,10 +17,6 @@
     "url": "https://github.com/backstage-ui/backstage-switch-button/issues"
   },
   "homepage": "https://github.com/backstage-ui/backstage-switch-button#readme",
-  "peerDependencies": {
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0"
-  },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "babel-jest": "^14.1.0",
@@ -34,7 +30,9 @@
     "eslint-plugin-react": "^6.0.0",
     "jest": "^14.1.0",
     "jest-cli": "^14.1.0",
-    "react-addons-test-utils": "^15.3.0"
+    "react": "^15.3.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-dom": "^15.3.0"
   },
   "jest": {
     "automock": false
