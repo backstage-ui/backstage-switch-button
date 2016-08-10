@@ -1,3 +1,4 @@
+/* global describe, it, expect */
 import React from 'react';
 import { shallow } from 'enzyme';
 import SwitchButton from '../switch-button';
@@ -10,13 +11,13 @@ describe('<SwitchButton />', () => {
 
   it('should be checked', () => {
     const wrapper = shallow(<SwitchButton checked />);
-    const input = wrapper.find("input");
-    expect(input.prop("checked")).toBe(true);
+    const input = wrapper.find('input');
+    expect(input.prop('checked')).toBe(true);
   });
 
   it('should accept name', () => {
     const wrapper = shallow(<SwitchButton name="myname" />);
-    const input = wrapper.find("input");
-    expect(input.prop("name")).toBe("myname");
+    const input = wrapper.find('input');
+    expect(input.prop('name')).toBe('myname');
   });
 });

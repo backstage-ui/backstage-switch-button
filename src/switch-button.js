@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import style from "./switch-button.css";
+import React, { Component } from 'react';
+import style from './switch-button.css';
 
 export default class SwitchButton extends Component {
   constructor(props) {
@@ -11,27 +11,28 @@ export default class SwitchButton extends Component {
   render() {
     return (
       <div className={this.props.className} style={style}>
-      <label></label>
-      <input
-      onChange={this.props.onChange}
-      checked={this.props.checked}
-      name={this.props.name}
-      type="checkbox"
-      value="1"
-      />
+        <label />
+        <input
+          onChange={this.props.onChange}
+          checked={this.props.checked}
+          name={this.props.name}
+          type="checkbox"
+          value="1"
+        />
       </div>
-    )
+    );
   }
 }
 
 SwitchButton.propTypes = {
-  name           : React.PropTypes.string,
-  checked        : React.PropTypes.bool,
-  onChange       : React.PropTypes.func
-}
+  className: React.PropTypes.string,
+  name: React.PropTypes.string,
+  checked: React.PropTypes.bool,
+  onChange: React.PropTypes.func,
+};
 
 SwitchButton.defaultProps = {
-  name           : 'switch-button',
-  checked        : null,
-  onChange       : () => {}
-}
+  name: 'switch-button',
+  checked: null,
+  onChange: () => {},
+};
