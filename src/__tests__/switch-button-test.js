@@ -20,4 +20,11 @@ describe('<SwitchButton />', () => {
     const input = wrapper.find('input');
     expect(input.prop('name')).toBe('myname');
   });
+
+  it('should accept label', () => {
+    const wrapper = shallow(<SwitchButton label="mylabel" />);
+    const label = wrapper.find('label');
+
+    expect(label.text()).toBe('mylabel');
+  });
 });
