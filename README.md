@@ -7,7 +7,7 @@ Backstage React switch button component
 ## Installing
 
 ```bash
-$ npm install backstage-switch-button --save
+$ npm install react-switch-button --save
 ```
 
 ## Example
@@ -17,5 +17,5 @@ import React from 'react';
 import { render } from 'react-dom';
 import SwitchButton from 'backstage-switch-button';
 
-render(<SwitchButton/>, document.getElementById('container'));
+render(<SwitchButton />, document.getElementById('container'));
 ```
