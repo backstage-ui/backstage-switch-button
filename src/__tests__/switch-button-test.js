@@ -27,4 +27,18 @@ describe('<SwitchButton />', () => {
 
     expect(label.text()).toBe('mylabel');
   });
+
+  it('value default should be true', () => {
+    const wrapper = shallow(<SwitchButton />);
+    const input = wrapper.find('input');
+
+    expect(input.prop('value')).toBe('true');
+  });
+
+  it('value should be customizable', () => {
+    const wrapper = shallow(<SwitchButton value="myvalue" />);
+    const input = wrapper.find('input');
+
+    expect(input.prop('value')).toBe('myvalue');
+  });
 });

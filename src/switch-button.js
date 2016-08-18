@@ -48,7 +48,7 @@ export default class SwitchButton extends Component {
           checked={this.state.checked}
           name={this.props.name}
           type="checkbox"
-          value="1"
+          value={this.props.value}
         />
         <div
           style={backgroundStyle}
@@ -72,11 +72,13 @@ SwitchButton.propTypes = {
   label: React.PropTypes.string,
   checked: React.PropTypes.bool,
   onChange: React.PropTypes.func,
+  value: React.PropTypes.string,
 };
 
 SwitchButton.defaultProps = {
   name: 'switch-button',
   label: '',
+  value: 'true',
   checked: null,
   onChange: () => {},
 };
