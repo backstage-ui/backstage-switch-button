@@ -1,10 +1,10 @@
 {
   "name": "backstage-switch-button",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "backstage switch button",
-  "main": "index.js",
+  "main": "dist/switch-button.js",
   "scripts": {
-    "build:commonjs": "babel src/ --out-dir lib/ --ignore __tests__,__mocks__",
+    "build": "babel src/ --out-dir dist/ --ignore __tests__,__mocks__",
     "lint": "eslint src",
     "test": "jest test"
   },
