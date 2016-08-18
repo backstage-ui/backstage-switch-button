@@ -7,7 +7,7 @@ Backstage React switch button component
 ## Installing
 
 ```bash
-$ npm install react-switch-button --save
+$ npm install backstage-switch-button --save
 ```
 
 ## Example
