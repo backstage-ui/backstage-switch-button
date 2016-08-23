@@ -113,7 +113,8 @@ SwitchButton.propTypes = {
   label: _react2.default.PropTypes.string,
   checked: _react2.default.PropTypes.bool,
   onChange: _react2.default.PropTypes.func,
-  value: _react2.default.PropTypes.string
+  value: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object
 };
 
 SwitchButton.defaultProps = {
@@ -121,5 +122,6 @@ SwitchButton.defaultProps = {
   label: '',
   value: 'true',
   checked: null,
-  onChange: function onChange() {}
+  onChange: function onChange() {},
+  style: {}
 };
