@@ -27,6 +27,7 @@ export default class SwitchButton extends Component {
   render() {
     let backgroundStyle = styles.background;
     let buttonStyle = styles.button;
+    const containerStyle = Object.assign({}, styles.container, this.props.style);
 
     if (this.state.checked) {
       buttonStyle = Object.assign({}, buttonStyle, styles.buttonChecked);
@@ -40,7 +41,7 @@ export default class SwitchButton extends Component {
     }
 
     return (
-      <div className={this.props.className} style={styles.container}>
+      <div className={this.props.className} style={containerStyle}>
         <input
           style={styles.checkbox}
           id="backstage-switch-button"
