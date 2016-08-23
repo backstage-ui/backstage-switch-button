@@ -1,6 +1,6 @@
 {
   "name": "backstage-switch-button",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "backstage switch button",
   "main": "dist/switch-button.js",
   "scripts": {

@@ -58,6 +58,7 @@ var SwitchButton = function (_Component) {
     value: function render() {
       var backgroundStyle = _switchButton2.default.background;
       var buttonStyle = _switchButton2.default.button;
+      var containerStyle = Object.assign({}, _switchButton2.default.container, this.props.style);
 
       if (this.state.checked) {
         buttonStyle = Object.assign({}, buttonStyle, _switchButton2.default.buttonChecked);
@@ -72,7 +73,7 @@ var SwitchButton = function (_Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: this.props.className, style: _switchButton2.default.container },
+        { className: this.props.className, style: containerStyle },
         _react2.default.createElement('input', {
           style: _switchButton2.default.checkbox,
           id: 'backstage-switch-button',
