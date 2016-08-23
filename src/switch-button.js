@@ -73,6 +73,7 @@ SwitchButton.propTypes = {
   checked: React.PropTypes.bool,
   onChange: React.PropTypes.func,
   value: React.PropTypes.string,
+  style: React.PropTypes.object,
 };
 
 SwitchButton.defaultProps = {
@@ -81,4 +82,5 @@ SwitchButton.defaultProps = {
   value: 'true',
   checked: null,
   onChange: () => {},
+  style: {},
 };
